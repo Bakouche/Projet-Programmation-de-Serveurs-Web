@@ -1,0 +1,21 @@
+CREATE TABLE contrats (
+  id int(11) NOT NULL AUTO_INCREMENT,
+  type varchar(255) NOT NULL,
+  date_debut date NOT NULL,
+  date_fin date NOT NULL,
+  salaire decimal(10,2) NOT NULL,
+  user_id int(11) NOT NULL,
+  PRIMARY KEY (id)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; 
+  KEY user_id (user_id),
+  CONSTRAINT contrats_ibfk_1 FOREIGN KEY (user_id) REFERENCES users (id) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+Table "Paiements"
+ID_Paiement (clé primaire)
+ID_Employé (clé étrangère)
+Date de paiement
+Montant du paiement
+Méthode de paiement (chèque, virement bancaire, espèces)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

@@ -1,0 +1,25 @@
+CREATE TABLE Recrutement (
+id int(11) NOT NULL AUTO_INCREMENT,
+poste varchar(255) NOT NULL,
+date_debut DATE NOT NULL,
+date_fin DATE NOT NULL,
+description TEXT,
+service_id int(11) NOT NULL,
+lieu VARCHAR(255) NOT NULL,
+salaire DECIMAL(10, 2) NOT NULL,
+PRIMARY KEY (id),
+FOREIGN KEY (service_id) REFERENCES services(id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE Formation (
+id int(11) NOT NULL AUTO_INCREMENT,
+nom varchar(255) NOT NULL,
+date_debut DATE NOT NULL,
+date_fin DATE NOT NULL,
+description TEXT,
+employee_id int(11) NOT NULL,
+duree INT NOT NULL,
+lieu VARCHAR(255) NOT NULL,
+PRIMARY KEY (id),
+FOREIGN KEY (employee_id) REFERENCES employees(id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

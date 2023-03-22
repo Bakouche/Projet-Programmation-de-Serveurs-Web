@@ -1,4 +1,4 @@
-CREATE TABLE services (
+ CREATE TABLE services (
   id int(11) NOT NULL AUTO_INCREMENT,
   nom varchar(255) NOT NULL,
   departement_id int(11) NOT NULL,

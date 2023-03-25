@@ -3,6 +3,6 @@
 --Grace Annick Djussi: Créations des tables roles et départements.
 --Bamba prospere nema : Creations des tables  Services et Employees 
 creation des models 
---Abderraouf Benslimane: creation des tables Contrat et payement plus controleurs et routes pour les 2 tables  
+--Abderraouf Benslimane: creation des tables Contrat et payement plus controleurs pour les 2 tables  
 
 
